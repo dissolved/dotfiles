@@ -1,7 +1,7 @@
 # This is Git's per-user configuration file.
 [user]
-	name = Ryan Sandridge
-	email = noreply@ryansandridge.com
+  name = Ryan Sandridge
+  email = noreply@ryansandridge.com
 [color]
     branch = true
     diff = true
@@ -12,16 +12,20 @@
 [color "status"]
   untracked = cyan
 [alias]
-	st = status
-	ci = commit
-	co = checkout
-	b ="branch --sort=-committerdate --format='%(HEAD) %(color:#b48700)%(objectname:short)%(color:reset)  %(color:green)%(committerdate:short)%(color:reset) %(color:bold yellow)%(refname:short)%(color:reset) - %(contents:subject) - %(color:#002db4)%(authorname)%(color:reset)'"
-	f = fetch
-	a = add --patch
-	work = log --format='%h %ad [%an] | %s%d' --graph --date=short
-	fpush = push --force-with-lease
+  st = status
+  ci = commit
+  co = checkout
+  b ="branch --sort=-committerdate --format='%(HEAD) %(color:#b48700)%(objectname:short)%(color:reset)  %(color:green)%(committerdate:short)%(color:reset) %(color:bold yellow)%(refname:short)%(color:reset) - %(contents:subject) - %(color:#002db4)%(authorname)%(color:reset)'"
+  f = fetch
+  a = add --patch
+  work = log --format='%h %ad [%an] | %s%d' --graph --date=short
+  fpush = push --force-with-lease
 [push]
-	default = current
+  default = current
 [log]
-	mailmap = true
-	date = auto:human
+  mailmap = true
+  date = auto:human
+[pull]
+  rebase = true
+[fetch]
+  prune = true
