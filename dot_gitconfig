@@ -1,13 +1,6 @@
 # This is Git's per-user configuration file.
 [core]
   pager = delta
-[delta]
-  plus-color = "#012800"
-  minus-color = "#340001"
-  syntax-theme = Monokai Extended
-  features = side-by-side line-numbers decorations
-[interactive]
-  diffFilter = delta --color-only
 [user]
   name = Ryan Sandridge
   email = noreply@ryansandridge.com
@@ -34,6 +27,13 @@
 [log]
   mailmap = true
   date = auto:human
+[delta]
+  plus-color = "#012800"
+  minus-color = "#340001"
+  syntax-theme = Monokai Extended
+  features = side-by-side line-numbers decorations
+[interactive]
+  diffFilter = delta --color-only
 [pull]
   rebase = true
 [fetch]
