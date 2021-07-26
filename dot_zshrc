@@ -108,7 +108,7 @@ fi
 
 # WIP to get git to manage dotfiles in an eloquent way. Inspired by https://www.atlassian.com/git/tutorials/dotfiles
 # alias g="[[ $PWD == $HOME ]] && 'git --git-dir=$HOME/.zsh_config_repo/ --work-tree=$HOME' || 'git'"
-alias dotgit='/usr/local/bin/git --git-dir=$HOME/.zsh_config_repo/ --work-tree=$HOME'
+# alias dotgit='/usr/local/bin/git --git-dir=$HOME/.zsh_config_repo/ --work-tree=$HOME'
 # alt_dot_git() {
     # see https://unix.stackexchange.com/questions/375498/is-it-possible-to-define-directory-sensitive-aliases-in-zsh-or-any-other-shell
     # and https://ss64.com/osx/xattr.html
@@ -119,7 +119,6 @@ alias dotgit='/usr/local/bin/git --git-dir=$HOME/.zsh_config_repo/ --work-tree=$
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 #
-alias arst="asdf"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
