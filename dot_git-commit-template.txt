@@ -1,0 +1,103 @@
+# For the subject line:
+#   * Use 50 characters maximum.
+#   * Do not use a sentence-ending period.
+# -----------------------------------------------
+
+
+# For the body text:
+#   * Use as many lines as you like.
+#   * Use 72 characters maximum per line for typical word wrap text.
+
+# _Why is this change happening, e.g. goals, use cases, stories, etc.?_
+# Why:
+
+# How is this change happening, e.g. implementations, algorithms, etc.?
+# How:
+
+# ____Tags suitable for searching, such as hashtags, keywords, etc.____
+# Tags:
+
+# ## Help ##
+#
+# Subject line imperative uppercase verbs:
+#
+#   Add = Create a capability e.g. feature, test, dependency.
+#   Drop = Delete a capability e.g. feature, test, dependency.
+#   Fix = Fix an issue e.g. bug, typo, accident, misstatement.
+#   Bump = Increase the version of something e.g. a dependency.
+#   Make = Change the build process, or tools, or infrastructure.
+#   Start = Begin doing something; e.g. enable a toggle, feature flag, etc.
+#   Stop = End doing something; e.g. disable a toggle, feature flag, etc.
+#   Optimize = A change that MUST be just about performance, e.g. speed up code.
+#   Document = A change that MUST be only in the documentation, e.g. help files.
+#   Refactor = A change that MUST be just refactoring.
+#   Reformat = A change that MUST be just format, e.g. indent line, trim space, etc.
+#   Rephrase = A change that MUST be just textual, e.g. edit a comment, doc, etc.
+#
+#
+#
+#
+# ## Trailers ##
+#
+# Trailers are good for tracking and also for `git interpret-trailers`.
+#
+# Example of "See:" trailers that mean "see this additional information"
+# and links to relevant web pages, issue trackers, blog posts, etc.:
+#
+#     See: https://example.com/
+#     See: Issue #123 <https://example.com/issue/123>
+#
+# We like to use the "See:" trailers to link to issue trackers (e.g. Jira,
+# Asana, Basecamp, Trello), document files and folders (e.g. Box, Dropbox),
+# UI/UX designs (e.g. Figma, Lucidchart), reference pages (e.g. Wikipedia,
+# internet RFCs, IEEE standards), and web posts (e.g. StackOverflow, HN).
+#
+# Example of "Co-authored-by:" trailers that list each author's name
+# and their preferred commit message email address or contact URL:
+#
+#     Co-authored-by: Alice Adams <alice@example.com>
+#     Co-authored-by: Bob Brown <https://bob.example.com>
+#
+# We like to use the "Co-authored-by:" trailers when we pair program,
+# triple program, and group program. These are parsed automatically by
+# some version control services (e.g. GitHub, GitLab) and will link
+# to the authors' accounts and show up on the authors' commit history.
+#
+# Example of "Sponsored-by:" trailers that list each sponsor's name,
+# which could be a person's or organization's, and contact email or URL:
+#
+#     Sponsored-by: Adam Anderson <adam@example.com>
+#     Sponsored-by: Bravo Organization <https://bravo.example.com>
+#
+# The git tools require trailers to be last in a commit message,
+# and must be one trailer per line, and with no extra lines between.
+#
+#
+# ## About ##
+#
+# This is our team's starting point for our git commit messages.
+# You can edit this template as you like, to customize it.
+#
+# For more information about git commit ideas and help:
+# https://github.com/joelparkerhenderson/git-commit-message
+#
+#
+# ## Usage ##
+#
+# Put the template file here:
+#
+#     ~/.git-commit-template.txt
+#
+# Configure git to use the template file by running:
+#
+#     git config --global commit.template ~/.git-commit-template.txt
+#
+# Add the template file to the ~/.gitconfig file:
+#
+#     [commit]
+#       template = ~/.git-commit-template.txt
+#
+# If you prefer other file locations or ways of working,
+# you can freely adjust the usage as you like.
+#
+#
