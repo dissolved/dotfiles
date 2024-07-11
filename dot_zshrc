@@ -146,6 +146,16 @@ alias pyact='source ./.venv/bin/activate'
 export PYTHONBREAKPOINT=pudb.set_trace
 export PYTHONSTARTUP=~/.pythonrc.py
 export PATH="$HOME/.local/bin:$PATH" # Poetry now needs this, but other CLI may use as well
+function pip() {
+    echo "Do you want to use 'uv' instead of 'pip'? (y/n)"
+    read -q response
+    echo
+    if [[ "$response" =~ ^[Yy]$ ]]; then
+        command uv pip "$@"
+    else
+        command pip "$@"
+    fi
+}
 
 
 # Homebrew
