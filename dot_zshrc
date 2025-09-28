@@ -112,7 +112,7 @@ source $ZSH/oh-my-zsh.sh
 if [[ -n $SSH_CONNECTION ]]; then
   export EDITOR='nano'
 else
-  export EDITOR='subl -w'
+  export EDITOR='zed -w'
 fi
 
 # Compilation flags
@@ -164,3 +164,4 @@ export HOMEBREW_NO_AUTO_UPDATE=1
 
 # a version manager to rule them all
 [[ ! -f /usr/local/opt/asdf/asdf.sh ]] || source /usr/local/opt/asdf/asdf.sh
+export PATH="/usr/local/opt/bison/bin:$PATH"
