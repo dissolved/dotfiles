@@ -43,6 +43,10 @@
   prune = true
 [init]
   defaultBranch = main
+[diff]
+  renames = true
+[status]
+  renames = true
 
 {{- $gh := "" -}}
 {{- if stat "/opt/homebrew/bin/gh" -}}
