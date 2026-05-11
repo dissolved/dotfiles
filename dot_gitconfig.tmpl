@@ -43,9 +43,23 @@
   prune = true
 [init]
   defaultBranch = main
+
+{{- $gh := "" -}}
+{{- if stat "/opt/homebrew/bin/gh" -}}
+{{-   $gh = "/opt/homebrew/bin/gh" -}}
+{{- else if stat "/usr/local/bin/gh" -}}
+{{-   $gh = "/usr/local/bin/gh" -}}
+{{- else if lookPath "gh" -}}
+{{-   $gh = lookPath "gh" -}}
+{{- end -}}
+
+{{- if $gh }}
+
 [credential "https://github.com"]
-  helper =
-  helper = !/usr/local/bin/gh auth git-credential
+	helper =
+	helper = !{{ $gh }} auth git-credential
+
 [credential "https://gist.github.com"]
-  helper =
-  helper = !/usr/local/bin/gh auth git-credential
+	helper =
+	helper = !{{ $gh }} auth git-credential
+{{- end }}
