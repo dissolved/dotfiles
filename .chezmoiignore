@@ -1,0 +1,5 @@
+# The aerc compatibility path is only relevant on macOS.
+{{ if ne .chezmoi.os "darwin" }}
+Library
+Library/**
+{{ end }}
