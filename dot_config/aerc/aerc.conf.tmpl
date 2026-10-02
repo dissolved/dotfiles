@@ -1,0 +1,19 @@
+# Managed by chezmoi. See aerc-config(5).
+
+[filters]
+text/plain = colorize
+text/calendar = calendar
+message/delivery-status = colorize
+message/rfc822 = colorize
+text/html = ! html
+.headers = colorize
+
+[openers]
+{{ if eq .chezmoi.os "darwin" -}}
+text/html = open -a "Firefox"
+text/ehtml = open -a "Firefox"
+* = open
+{{ else if eq .chezmoi.os "linux" -}}
+text/html = xdg-open
+* = xdg-open
+{{ end -}}
